@@ -1,0 +1,43 @@
+<div class="text-center">
+
+  <h1 class="lg">Planets</h1>
+
+  <mat-card class="w500 center black" *ngFor=" let planet of planets | paginate : { itemsPerPage:2, currentPage: d }">
+
+
+
+    <mat-card-title>
+      <h3 class="black">Planet Name: {{planet.name}}</h3>
+    </mat-card-title>
+    <mat-card-content class="black">
+      <ul>
+        <li>Rotation Period: {{planet.rotation_period}}</li>
+        <li>Rotation Period: {{planet.rotation_period}}</li>
+        <li>Diameter: {{planet.diameter}}</li>
+        <li>Climate: {{planet.climate}}</li>
+        <li>Gravity: {{planet.gravity}}</li>
+        <li>Terrain: {{planet.terrain }}</li>
+        <li>Surface Water: {{planet.surface_water }}</li>
+        <li>Population: {{planet.population }}</li>
+        <li class="long">Residents: {{planet.residents }}</li>
+        <li class="long">Films: {{planet.films }}</li>
+        <li>Created: {{planet.created }}</li>
+        <li>Edited: {{planet.edited }}</li>
+        <li>Url: {{planet.url }}</li>
+      </ul>
+    </mat-card-content>
+
+    <mat-card-actions class="center">
+      <button mat-raised-button class="green">Zobacz więcej</button>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+
+
+  </mat-card>
+
+</div>
+
+<div class="w500">
+  <pagination-controls class="center" (pageChange)="d =$event"></pagination-controls>
+</div>

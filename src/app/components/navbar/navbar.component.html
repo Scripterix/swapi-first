@@ -1,0 +1,38 @@
+<mat-toolbar class="black">
+  <mat-toolbar-row>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon class="material-icons.md-36">menu</mat-icon>
+    </button>
+    <span>Star Wars API</span>
+
+    <mat-menu #menu="matMenu" class="black">
+      <button mat-menu-item [routerLink]="['/']" routerLinkActive="router-link-active">
+        <mat-icon class="black">home</mat-icon>
+        <span class="black">Home</span>
+      </button>
+      <button mat-menu-item [routerLink]="['/about']" routerLinkActive="router-link-active">
+        <mat-icon class="black">subject</mat-icon>
+        <span class="black">Planets</span>
+      </button>
+      <button mat-menu-item [routerLink]="['/user']" routerLinkActive="router-link-active">
+        <mat-icon class="black">new_releases</mat-icon>
+        <span class="black">Spec</span>
+      </button>
+      <button mat-menu-item [routerLink]="['/autocomplete']" routerLinkActive="router-link-active">
+        <mat-icon class="black">assignment</mat-icon>
+        <span class="black">List</span>
+      </button>
+    </mat-menu>
+
+
+    <span class="example-spacer"></span>
+    <!-- -->
+    <a mat-button routerLink="/autocomplete">
+      <mat-icon class="example-icon black material-icons.md-36">search</mat-icon>
+    </a>
+
+
+
+
+  </mat-toolbar-row>
+</mat-toolbar>

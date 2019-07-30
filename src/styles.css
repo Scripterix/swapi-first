@@ -1,0 +1,145 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
+  margin: 0;
+  padding: 0;
+  background:#343438;
+  color: rgb(99, 221, 99);
+  font-family: 'Questrial', sans-serif;
+}
+
+h1 {
+  
+    font-size: 200%;
+    font-weight : 400;
+    text-align: center;
+  }
+
+.lg  {
+  font-size: 5rem;
+  padding-top: 20vh;
+}
+
+h3 {
+ 
+  font-size: 150%;
+  font-weight : 400;
+  text-align: center;
+}
+
+.md {
+  font-size: 180%;
+}
+
+.sm {
+  font-size: 80% !important;
+}
+p {
+  color:  rgb(99, 221, 99) !important;
+    font-size: 150%;
+    font-weight : 200;
+    text-align: center;
+    list-style-type: none;
+
+}  
+ul, li {
+  color:  rgb(99, 221, 99) !important;
+    font-size: 130%;
+    font-weight : 200;
+    line-height: 2rem;
+    text-align: left;
+    list-style-type: none;
+    padding-left: 50px;
+
+}  
+
+.black {
+background :#343438;
+color:  rgb(99, 221, 99) !important;
+}
+
+.green {
+  background: rgb(99, 221, 99);
+  color: white;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.example-card {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.center { 
+  text-align: center;
+  margin: 0 auto;
+}
+
+.w500 {
+  width: 80vw;
+  text-align: center;
+  margin-left: 200px;
+}
+
+.home-wrapper {
+ margin-top: -50px;
+    height:35em; background-size:cover; width:auto;
+    background-image: url('https://images.pexels.com/photos/974471/nature-night-sky-stars-974471.jpeg?cs=srgb&dl=astrology-astronomy-celestial-974471.jpg&fm=jpg');
+    background-position:50% 50%;
+    text-align: center;
+    background-color: black;
+  }
+ 
+  @media (max-width: 960px) {
+
+    h1 {
+  
+      font-size: 120%;
+      font-weight : 200;
+      text-align: center;
+    }
+  
+  .lg  {
+    font-size: 4rem;
+    padding-top: 10vh;
+  }
+  
+  h3 {
+   
+    font-size: 120%;
+    font-weight : 200;
+    text-align: center;
+  }
+  
+  .md {
+    font-size: 1rem;
+  }
+  
+  .sm {
+    font-size: 0.5rem !important;
+  }
+  p {
+    color:  rgb(99, 221, 99) !important;
+      font-size: 115%;
+      font-weight : 200;
+      text-align: center;
+      list-style-type: none;
+  
+  }  
+  ul, li {
+    color:  rgb(99, 221, 99) !important;
+      font-size: 80%;
+      font-weight : 200;
+      line-height: 2rem;
+      text-align: left;
+      list-style-type: none;
+      padding-left: 50px;
+  
+  }  
+
+  }

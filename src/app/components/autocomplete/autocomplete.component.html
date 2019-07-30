@@ -1,0 +1,35 @@
+<form class="example-form black">
+  <mat-card class="center black">
+    <mat-card-title>Pick the Planet</mat-card-title>
+    <mat-card-content>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo quis nulla vitae. Sit, cumque earum! Quo
+        ipsa, ex quasi officiis laboriosam numquam culpa perspiciatis voluptates ab? Sapiente delectus autem est. Error
+        nobis reprehenderit deleniti minima! Ullam aperiam dolorem nesciunt, consectetur nam veritatis error! Hic, sunt?
+        Fugit, hic laudantium id omnis expedita ad, earum atque obcaecati soluta repellat odit vero eum? Perspiciatis
+        quibusdam quod, commodi fugiat dolore incidunt laudantium? Aut aliquam eius totam molestiae nisi nostrum ipsum
+        eaque inventore at mollitia laudantium sequi, placeat earum ducimus error commodi natus quae magnam?
+        Necessitatibus ex laborum quia. Id nihil numquam fuga odit eos maiores excepturi veniam cupiditate esse, quas
+        aspernatur laborum in optio rem pariatur sit nulla. Alias, ratione repudiandae! Dolorem nemo labore, maxime rem
+        recusandae perferendis voluptatem quasi magnam ratione ducimus molestias eveniet fugit. Nemo, sit sequi
+        doloribus atque debitis dolorem mollitia magnam iusto necessitatibus temporibus odit ipsa possimus quos
+        excepturi minus at a fugiat deserunt similique quas? Ducimus, perferendis maxime quae incidunt qui reprehenderit
+        cumque iste soluta possimus similique odio dolorum porro nesciunt nobis laudantium obcaecati vero placeat
+        molestias eveniet beatae provident delectus illo enim. Autem iusto quas cupiditate iste molestias ullam, ad
+        quidem voluptates in commodi alias sequi at?</p>
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl"
+            [matAutocomplete]="auto">
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of options" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+
+
+
+
+  </mat-card>
